@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "LSCocoa",
+        "repositoryURL": "https://github.com/dinogustinn/LSCocoa.git",
+        "state": {
+          "branch": "master",
+          "revision": "51a11745f6ef6c2675aa1a951cc2fe64e60e68f8",
+          "version": null
+        }
+      },
+      {
+        "package": "LSData",
+        "repositoryURL": "https://github.com/dinogustinn/LSData.git",
+        "state": {
+          "branch": "master",
+          "revision": "f00b1f6e4ffc1f898039d00b308e830e9945f693",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

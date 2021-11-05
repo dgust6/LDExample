@@ -7,13 +7,58 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+enum SupportedVCs {
+    case searchVC
+    case refreshVC
 }
 
+class ViewController: UIViewController {
+    
+    var items: [(title: String, vc: SupportedVCs)] = [("Search", .searchVC), ("Refresh", .refreshVC)]
+    lazy var tableView = UITableView()
+    
+    override func loadView() {
+        super.loadView()
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        self.navigationController?.pushViewController(SearchViewController(), animated: true)
+    }
+}
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let item = items[indexPath.row]
+        cell.textLabel?.text = item.title
+        cell.largeContentTitle = item.title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = items[indexPath.row]
+        let viewController: UIViewController
+        switch item.vc {
+        case .refreshVC:
+            viewController = RefreshViewController()
+        case .searchVC:
+            viewController = SearchViewController()
+        }
+        self.navigationController?.pushViewController(viewController, animated: true)
+
+    }
+}

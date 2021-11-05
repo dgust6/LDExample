@@ -3,19 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0A53282735A8900083ADA5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A53272735A8900083ADA5 /* SearchViewController.swift */; };
+		CC0A532A2735A8AC0083ADA5 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A53292735A8AC0083ADA5 /* RefreshViewController.swift */; };
+		CC0A532C2735A8B80083ADA5 /* CoreDataSyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A532B2735A8B80083ADA5 /* CoreDataSyncViewController.swift */; };
+		CC17D7652738679B0043D8E4 /* LSCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CC17D7642738679B0043D8E4 /* LSCocoa */; };
 		CCB40EDD2733389C008D72C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB40EDC2733389C008D72C1 /* AppDelegate.swift */; };
 		CCB40EDF2733389C008D72C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB40EDE2733389C008D72C1 /* SceneDelegate.swift */; };
 		CCB40EE12733389C008D72C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB40EE02733389C008D72C1 /* ViewController.swift */; };
 		CCB40EE42733389C008D72C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB40EE22733389C008D72C1 /* Main.storyboard */; };
 		CCB40EE6273338A0008D72C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB40EE5273338A0008D72C1 /* Assets.xcassets */; };
 		CCB40EE9273338A0008D72C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB40EE7273338A0008D72C1 /* LaunchScreen.storyboard */; };
+		CCF3CA5727334CED00C12FB3 /* SearchRepositoriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CA5627334CED00C12FB3 /* SearchRepositoriesEndpoint.swift */; };
+		CCF3CA5927334D3D00C12FB3 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CA5827334D3D00C12FB3 /* NetworkConfiguration.swift */; };
+		CCF3CAC12733553A00C12FB3 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CAC02733553A00C12FB3 /* Repository.swift */; };
+		CCF3CAC3273355AB00C12FB3 /* SearchRepositoriesParamMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CAC2273355AB00C12FB3 /* SearchRepositoriesParamMapper.swift */; };
+		CCF3CAC627335CBC00C12FB3 /* SearchRepositoriesOutputMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CAC527335CBC00C12FB3 /* SearchRepositoriesOutputMapper.swift */; };
+		CCF3CACA2733FCE600C12FB3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CAC82733FCE600C12FB3 /* Model.xcdatamodeld */; };
+		CCF3CACC2733FD0600C12FB3 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CACB2733FD0600C12FB3 /* Owner.swift */; };
+		CCF3CACF2733FDD200C12FB3 /* RepositoryNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CACE2733FDD200C12FB3 /* RepositoryNetworkModel.swift */; };
+		CCF3CAD12733FE2300C12FB3 /* OwnerNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CAD02733FE2300C12FB3 /* OwnerNetworkModel.swift */; };
+		CCF3CAD42733FFB200C12FB3 /* RepositoryManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF3CAD32733FFB200C12FB3 /* RepositoryManagedObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC0A53272735A8900083ADA5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CC0A53292735A8AC0083ADA5 /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
+		CC0A532B2735A8B80083ADA5 /* CoreDataSyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSyncViewController.swift; sourceTree = "<group>"; };
 		CCB40ED92733389C008D72C1 /* LDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB40EDC2733389C008D72C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB40EDE2733389C008D72C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,16 @@
 		CCB40EE5273338A0008D72C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCB40EE8273338A0008D72C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCB40EEA273338A0008D72C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF3CA5627334CED00C12FB3 /* SearchRepositoriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesEndpoint.swift; sourceTree = "<group>"; };
+		CCF3CA5827334D3D00C12FB3 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		CCF3CAC02733553A00C12FB3 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		CCF3CAC2273355AB00C12FB3 /* SearchRepositoriesParamMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesParamMapper.swift; sourceTree = "<group>"; };
+		CCF3CAC527335CBC00C12FB3 /* SearchRepositoriesOutputMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesOutputMapper.swift; sourceTree = "<group>"; };
+		CCF3CAC92733FCE600C12FB3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		CCF3CACB2733FD0600C12FB3 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		CCF3CACE2733FDD200C12FB3 /* RepositoryNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryNetworkModel.swift; sourceTree = "<group>"; };
+		CCF3CAD02733FE2300C12FB3 /* OwnerNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerNetworkModel.swift; sourceTree = "<group>"; };
+		CCF3CAD32733FFB200C12FB3 /* RepositoryManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryManagedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +58,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC17D7652738679B0043D8E4 /* LSCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC0A53262735A8550083ADA5 /* FeatureExamples */ = {
+			isa = PBXGroup;
+			children = (
+				CC0A53272735A8900083ADA5 /* SearchViewController.swift */,
+				CC0A53292735A8AC0083ADA5 /* RefreshViewController.swift */,
+				CC0A532B2735A8B80083ADA5 /* CoreDataSyncViewController.swift */,
+			);
+			path = FeatureExamples;
+			sourceTree = "<group>";
+		};
 		CCB40ED02733389C008D72C1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +94,10 @@
 		CCB40EDB2733389C008D72C1 /* LDExample */ = {
 			isa = PBXGroup;
 			children = (
+				CC0A53262735A8550083ADA5 /* FeatureExamples */,
+				CCF3CAC72733FCBD00C12FB3 /* CoreData */,
+				CCF3CA5D2733551100C12FB3 /* Model */,
+				CCF3CA5427334CC900C12FB3 /* Network */,
 				CCB40EDC2733389C008D72C1 /* AppDelegate.swift */,
 				CCB40EDE2733389C008D72C1 /* SceneDelegate.swift */,
 				CCB40EE02733389C008D72C1 /* ViewController.swift */,
@@ -65,6 +107,69 @@
 				CCB40EEA273338A0008D72C1 /* Info.plist */,
 			);
 			path = LDExample;
+			sourceTree = "<group>";
+		};
+		CCF3CA5427334CC900C12FB3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3CACD2733FDC500C12FB3 /* Model */,
+				CCF3CA5527334CD900C12FB3 /* SearchRepositories */,
+				CCF3CA5827334D3D00C12FB3 /* NetworkConfiguration.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CCF3CA5527334CD900C12FB3 /* SearchRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3CAC427335C7300C12FB3 /* Mappers */,
+				CCF3CA5627334CED00C12FB3 /* SearchRepositoriesEndpoint.swift */,
+			);
+			path = SearchRepositories;
+			sourceTree = "<group>";
+		};
+		CCF3CA5D2733551100C12FB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3CAC02733553A00C12FB3 /* Repository.swift */,
+				CCF3CACB2733FD0600C12FB3 /* Owner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCF3CAC427335C7300C12FB3 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3CAC2273355AB00C12FB3 /* SearchRepositoriesParamMapper.swift */,
+				CCF3CAC527335CBC00C12FB3 /* SearchRepositoriesOutputMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		CCF3CAC72733FCBD00C12FB3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3CAD22733FFA500C12FB3 /* Model */,
+				CCF3CAC82733FCE600C12FB3 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CCF3CACD2733FDC500C12FB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3CACE2733FDD200C12FB3 /* RepositoryNetworkModel.swift */,
+				CCF3CAD02733FE2300C12FB3 /* OwnerNetworkModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCF3CAD22733FFA500C12FB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3CAD32733FFB200C12FB3 /* RepositoryManagedObject.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,8 +186,13 @@
 			buildRules = (
 			);
 			dependencies = (
+				CCB40EFA27333962008D72C1 /* PBXTargetDependency */,
+				CCB40EFC27333962008D72C1 /* PBXTargetDependency */,
 			);
 			name = LDExample;
+			packageProductDependencies = (
+				CC17D7642738679B0043D8E4 /* LSCocoa */,
+			);
 			productName = LDExample;
 			productReference = CCB40ED92733389C008D72C1 /* LDExample.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +220,9 @@
 				Base,
 			);
 			mainGroup = CCB40ED02733389C008D72C1;
+			packageReferences = (
+				CC17D7632738679B0043D8E4 /* XCRemoteSwiftPackageReference "LSCocoa" */,
+			);
 			productRefGroup = CCB40EDA2733389C008D72C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,13 +250,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF3CAD12733FE2300C12FB3 /* OwnerNetworkModel.swift in Sources */,
+				CCF3CAC3273355AB00C12FB3 /* SearchRepositoriesParamMapper.swift in Sources */,
+				CCF3CAC627335CBC00C12FB3 /* SearchRepositoriesOutputMapper.swift in Sources */,
+				CCF3CA5727334CED00C12FB3 /* SearchRepositoriesEndpoint.swift in Sources */,
+				CC0A532C2735A8B80083ADA5 /* CoreDataSyncViewController.swift in Sources */,
+				CCF3CAD42733FFB200C12FB3 /* RepositoryManagedObject.swift in Sources */,
+				CCF3CACC2733FD0600C12FB3 /* Owner.swift in Sources */,
+				CCF3CA5927334D3D00C12FB3 /* NetworkConfiguration.swift in Sources */,
 				CCB40EE12733389C008D72C1 /* ViewController.swift in Sources */,
+				CC0A53282735A8900083ADA5 /* SearchViewController.swift in Sources */,
+				CCF3CACA2733FCE600C12FB3 /* Model.xcdatamodeld in Sources */,
+				CC0A532A2735A8AC0083ADA5 /* RefreshViewController.swift in Sources */,
 				CCB40EDD2733389C008D72C1 /* AppDelegate.swift in Sources */,
+				CCF3CACF2733FDD200C12FB3 /* RepositoryNetworkModel.swift in Sources */,
 				CCB40EDF2733389C008D72C1 /* SceneDelegate.swift in Sources */,
+				CCF3CAC12733553A00C12FB3 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCB40EFA27333962008D72C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CCB40EF927333962008D72C1 /* LDCoreData */;
+		};
+		CCB40EFC27333962008D72C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CCB40EFB27333962008D72C1 /* LDNetwork */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CCB40EE22733389C008D72C1 /* Main.storyboard */ = {
@@ -339,6 +476,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC17D7632738679B0043D8E4 /* XCRemoteSwiftPackageReference "LSCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dinogustinn/LSCocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CCB40EF0273338FC008D72C1 /* XCRemoteSwiftPackageReference "LDCoreData" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dinogustinn/LDCoreData.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CCB40EF32733392B008D72C1 /* XCRemoteSwiftPackageReference "LDNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dinogustinn/LDNetwork.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC17D7642738679B0043D8E4 /* LSCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC17D7632738679B0043D8E4 /* XCRemoteSwiftPackageReference "LSCocoa" */;
+			productName = LSCocoa;
+		};
+		CCB40EF927333962008D72C1 /* LDCoreData */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCB40EF0273338FC008D72C1 /* XCRemoteSwiftPackageReference "LDCoreData" */;
+			productName = LDCoreData;
+		};
+		CCB40EFB27333962008D72C1 /* LDNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCB40EF32733392B008D72C1 /* XCRemoteSwiftPackageReference "LDNetwork" */;
+			productName = LDNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CCF3CAC82733FCE600C12FB3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCF3CAC92733FCE600C12FB3 /* Model.xcdatamodel */,
+			);
+			currentVersion = CCF3CAC92733FCE600C12FB3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CCB40ED12733389C008D72C1 /* Project object */;
 }
