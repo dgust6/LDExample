@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct Repository {
-    public var id: String
+struct Repository {
+    var id: String
     var name: String
     var watchers: Int
     var stars: Int

@@ -3,4 +3,438 @@
    uuid = "0A17624F-3ED1-482E-84A5-CFF58B07233D"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26BBE0BF-895A-41FC-B096-28897FAB9FD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "overwriteAll(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "26BBE0BF-895A-41FC-B096-28897FAB9FD8 - 1909516dc4fc3b79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.overwriteAll(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "26BBE0BF-895A-41FC-B096-28897FAB9FD8 - 95bac94405f7f768"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.overwriteAll(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCAD8870-8ABD-4D08-97A2-5BDB6D826C56"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "insert(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DCAD8870-8ABD-4D08-97A2-5BDB6D826C56 - d77615f846d2b5c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.insert(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "DCAD8870-8ABD-4D08-97A2-5BDB6D826C56 - 6186e238ec437ace"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.insert(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3328D9A-AD41-4F63-A35C-4826CA1EE3D7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "upsert(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F3328D9A-AD41-4F63-A35C-4826CA1EE3D7 - 8acb73bb0f7ae6d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.upsert(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "F3328D9A-AD41-4F63-A35C-4826CA1EE3D7 - c3b148101c1f294c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.upsert(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B330228-D9AD-42E0-9531-88BF1AB35EF0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "update(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B330228-D9AD-42E0-9531-88BF1AB35EF0 - 149556586f8604f2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.update(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "8B330228-D9AD-42E0-9531-88BF1AB35EF0 - cf593e3c588d9966"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.update(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; ()"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD716F9E-BF40-4195-AD38-75491670E9E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "insertPublisher(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD716F9E-BF40-4195-AD38-75491670E9E7 - b167fa8b905e060d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.insertPublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "FD716F9E-BF40-4195-AD38-75491670E9E7 - caa34d4dd7c0c958"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.insertPublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "145FFD15-58F1-4E21-B0C7-7D8EC07F178A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "overwriteAllPublisher(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "145FFD15-58F1-4E21-B0C7-7D8EC07F178A - eaf858a2cbfe9bb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.overwriteAllPublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "145FFD15-58F1-4E21-B0C7-7D8EC07F178A - 56a6b54ad568175b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.overwriteAllPublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "101"
+                  endingLineNumber = "101"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DC9699C-2F6C-4A28-8E6F-86248B2B19C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "upsertPublisher(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7DC9699C-2F6C-4A28-8E6F-86248B2B19C7 - 87bda7c0f726ae4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.upsertPublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "7DC9699C-2F6C-4A28-8E6F-86248B2B19C7 - c628a08bd6bb5f3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.upsertPublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04A52395-FFA5-45C8-8654-F86C71780610"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "updatePublisher(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "04A52395-FFA5-45C8-8654-F86C71780610 - 1540558739866ea2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LSCocoa.LSCoreDataRepository.updatePublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "04A52395-FFA5-45C8-8654-F86C71780610 - 3ce9dcb0f1e82c84"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in LSCocoa.LSCoreDataRepository.updatePublisher(Swift.Array&lt;&#x3c4;_0_0.AppModel&gt;) -&gt; Combine.AnyPublisher&lt;(), Swift.Error&gt;"
+                  moduleName = "LDExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dinogustin/Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSCoreData/Repository/LSCoreDataRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22BF8628-7303-4F10-AF6F-D77BF03A6AAA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSData/Sources/LSData/Features/LSSyncManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "init(dataSource:dataStorage:parameter:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A70409C7-5A94-4B2A-8515-96C3F2770459"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSData/Sources/LSData/Storage/DataStorage/LSDataStorage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "store(to:parameter:count:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5450BC9-994F-43C7-842A-D5149DD76A51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/LDExample-aohciqrzpmpcryeuhhjgtlfwbcxf/SourcePackages/checkouts/LSCocoa/Sources/LSCocoa/LSNetwork/LSNetworkDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "publisher(parameter:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

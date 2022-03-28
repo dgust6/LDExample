@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC0A53282735A8900083ADA5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A53272735A8900083ADA5 /* SearchViewController.swift */; };
+		CC0A53282735A8900083ADA5 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A53272735A8900083ADA5 /* CoreDataViewController.swift */; };
 		CC0A532A2735A8AC0083ADA5 /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A53292735A8AC0083ADA5 /* RefreshViewController.swift */; };
-		CC0A532C2735A8B80083ADA5 /* CoreDataSyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A532B2735A8B80083ADA5 /* CoreDataSyncViewController.swift */; };
 		CC17D7652738679B0043D8E4 /* LSCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CC17D7642738679B0043D8E4 /* LSCocoa */; };
+		CC18E27E27EE212B000DB70F /* OwnerManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E27D27EE212B000DB70F /* OwnerManagedObject.swift */; };
+		CC18E28027EE2BBE000DB70F /* LSCoreDataStack+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E27F27EE2BBE000DB70F /* LSCoreDataStack+Extensions.swift */; };
+		CC18E28227EE2CE4000DB70F /* SearchRepositoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E28127EE2CE4000DB70F /* SearchRepositoriesDataSource.swift */; };
+		CC18E28427EE2EA9000DB70F /* RepositoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18E28327EE2EA9000DB70F /* RepositoriesTableViewController.swift */; };
 		CCB40EDD2733389C008D72C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB40EDC2733389C008D72C1 /* AppDelegate.swift */; };
 		CCB40EDF2733389C008D72C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB40EDE2733389C008D72C1 /* SceneDelegate.swift */; };
 		CCB40EE12733389C008D72C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB40EE02733389C008D72C1 /* ViewController.swift */; };
@@ -30,9 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CC0A53272735A8900083ADA5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CC0A53272735A8900083ADA5 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		CC0A53292735A8AC0083ADA5 /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
-		CC0A532B2735A8B80083ADA5 /* CoreDataSyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSyncViewController.swift; sourceTree = "<group>"; };
+		CC18E27D27EE212B000DB70F /* OwnerManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerManagedObject.swift; sourceTree = "<group>"; };
+		CC18E27F27EE2BBE000DB70F /* LSCoreDataStack+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LSCoreDataStack+Extensions.swift"; sourceTree = "<group>"; };
+		CC18E28127EE2CE4000DB70F /* SearchRepositoriesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoriesDataSource.swift; sourceTree = "<group>"; };
+		CC18E28327EE2EA9000DB70F /* RepositoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewController.swift; sourceTree = "<group>"; };
 		CCB40ED92733389C008D72C1 /* LDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB40EDC2733389C008D72C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB40EDE2733389C008D72C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,9 +74,10 @@
 		CC0A53262735A8550083ADA5 /* FeatureExamples */ = {
 			isa = PBXGroup;
 			children = (
-				CC0A53272735A8900083ADA5 /* SearchViewController.swift */,
+				CC0A53272735A8900083ADA5 /* CoreDataViewController.swift */,
 				CC0A53292735A8AC0083ADA5 /* RefreshViewController.swift */,
-				CC0A532B2735A8B80083ADA5 /* CoreDataSyncViewController.swift */,
+				CC18E28127EE2CE4000DB70F /* SearchRepositoriesDataSource.swift */,
+				CC18E28327EE2EA9000DB70F /* RepositoriesTableViewController.swift */,
 			);
 			path = FeatureExamples;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 			children = (
 				CCF3CAD22733FFA500C12FB3 /* Model */,
 				CCF3CAC82733FCE600C12FB3 /* Model.xcdatamodeld */,
+				CC18E27F27EE2BBE000DB70F /* LSCoreDataStack+Extensions.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				CCF3CAD32733FFB200C12FB3 /* RepositoryManagedObject.swift */,
+				CC18E27D27EE212B000DB70F /* OwnerManagedObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,13 +263,16 @@
 				CCF3CAC3273355AB00C12FB3 /* SearchRepositoriesParamMapper.swift in Sources */,
 				CCF3CAC627335CBC00C12FB3 /* SearchRepositoriesOutputMapper.swift in Sources */,
 				CCF3CA5727334CED00C12FB3 /* SearchRepositoriesEndpoint.swift in Sources */,
-				CC0A532C2735A8B80083ADA5 /* CoreDataSyncViewController.swift in Sources */,
 				CCF3CAD42733FFB200C12FB3 /* RepositoryManagedObject.swift in Sources */,
 				CCF3CACC2733FD0600C12FB3 /* Owner.swift in Sources */,
 				CCF3CA5927334D3D00C12FB3 /* NetworkConfiguration.swift in Sources */,
 				CCB40EE12733389C008D72C1 /* ViewController.swift in Sources */,
-				CC0A53282735A8900083ADA5 /* SearchViewController.swift in Sources */,
+				CC0A53282735A8900083ADA5 /* CoreDataViewController.swift in Sources */,
 				CCF3CACA2733FCE600C12FB3 /* Model.xcdatamodeld in Sources */,
+				CC18E28427EE2EA9000DB70F /* RepositoriesTableViewController.swift in Sources */,
+				CC18E27E27EE212B000DB70F /* OwnerManagedObject.swift in Sources */,
+				CC18E28027EE2BBE000DB70F /* LSCoreDataStack+Extensions.swift in Sources */,
+				CC18E28227EE2CE4000DB70F /* SearchRepositoriesDataSource.swift in Sources */,
 				CC0A532A2735A8AC0083ADA5 /* RefreshViewController.swift in Sources */,
 				CCB40EDD2733389C008D72C1 /* AppDelegate.swift in Sources */,
 				CCF3CACF2733FDD200C12FB3 /* RepositoryNetworkModel.swift in Sources */,

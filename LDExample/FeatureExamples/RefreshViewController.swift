@@ -10,76 +10,49 @@ import LSCocoa
 import LSData
 import Combine
 
-class RefreshViewController: UIViewController {
-    
-    public lazy var searchBar = UISearchBar()
-    public lazy var tableView = UITableView()
-    
-    var cancelBag = Set<AnyCancellable>()
-    let repository = LSCoreDataRepository<RepositoryManagedObject>(stack: try! LSCoreDataStack(modelName: "Model"))
-    let dataSource = LSAPINetworkDataSource(endpoint: SearchRepositoriesEndpoint())
+class RefreshViewController: RepositoriesTableViewController {
+
+    private let dataSource = LSAPINetworkDataSource(endpoint: SearchRepositoriesEndpoint())
         .jsonDecodeMap(to: SearchRepositoriesEndpoint.Response.self)
         .outMap(with: SearchRepositoriesOutputMapper())
-        .paramMap(with: SearchRepositoriesParamMapper())
-        .refreshable(autoRefresh: false)
-        
-    var repositories = [Repository]()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        searchBar.delegate = self
-
+        .paramMap { (query: String) -> [LSApiEndpointAttribute] in
+            [LSApiEndpointAttribute.addUrlParameter(key: "q", value: query)]
+        }
+        .refreshable(parameter: "", refreshBlockType: .cacheLast)
+    
+    private lazy var syncManager = dataSource.syncManager(with: LSCoreDataRepository<Repository.ManagedObject>().resultMap(with: LSToPublisherMapper()), parameter: ())
+    
+    
+    private var cancelBag = Set<AnyCancellable>()
+    
+    override func loadView() {
+        super.loadView()
+        let syncButton = UIBarButtonItem(title: "Sync", style: .plain, target: self, action: #selector(syncToCoreData))
+        navigationItem.setRightBarButton(syncButton, animated: false)
+    }
+    
+    override func bindData() {
         dataSource.publisher()
             .sink(receiveCompletion: { completion in
                 print(completion)
             }, receiveValue: { repositories in
                 self.repositories = repositories
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
             })
             .store(in: &cancelBag)
+        
+        dataSource.errorPublisher
+            .sink { error in
+                print("request limit reached")
+            }
+            .store(in: &cancelBag)
+        
     }
     
-    override func loadView() {
-        super.loadView()
-        searchBar.sizeToFit()
-        navigationItem.titleView = searchBar
-        
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        
-        
-        view.backgroundColor = .white
-    }
-}
-
-extension RefreshViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        dataSource.refresh(with: [.query(searchText)])
-    }
-}
-
-extension RefreshViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repositories.count
+    @objc func syncToCoreData() {
+        syncManager.sync() // Saves currently queried items to database
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
-        cell.textLabel?.text = repositories[indexPath.row].name
-        return cell
+    override func searchBarTextChanged(to searchText: String) {
+        dataSource.refresh(with: searchText)
     }
-}
-
-extension RefreshViewController: UITableViewDelegate {
-    
 }

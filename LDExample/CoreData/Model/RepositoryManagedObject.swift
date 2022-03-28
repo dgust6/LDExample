@@ -11,40 +11,30 @@ import LSData
 import CoreData
 
 @objc(RepositoryManagedObject)
-public class RepositoryManagedObject: NSManagedObject {
+class RepositoryManagedObject: NSManagedObject {
     @NSManaged public var id: String
     @NSManaged public var name: String
+    @NSManaged public var stars: NSNumber
+    @NSManaged public var watchers: NSNumber
+    @NSManaged public var owner: OwnerManagedObject
 }
 
 extension RepositoryManagedObject: LSManagedObject {
     
-    public static var entityName: String {
-        "RepositoryManagedObject"
-    }
-    
-    public static var identityName: String {
-        "id"
-    }
-    
-    public func create(from model: Repository) -> RepositoryManagedObject {
-        let object = RepositoryManagedObject()
-        return object
-    }
-    
-    public func populate(with model: Repository, in context: NSManagedObjectContext?) {
+    func populate(with model: Repository, in context: NSManagedObjectContext?) {
         name = model.name
         id = model.id
     }
     
-    public func toModel() -> Repository? {
-        Repository(id: id, name: name, watchers: 0, stars: 0, owner: Owner(id: "", name: ""))
+    func toModel() -> Repository {
+        Repository(id: id, name: name, watchers: watchers.intValue, stars: stars.intValue, owner: owner.toModel())
     }
     
-    public typealias T = RepositoryManagedObject
+    typealias T = RepositoryManagedObject
     
-    public typealias AppModel = Repository
+    typealias AppModel = Repository
 }
 
 extension Repository: LSManagedObjectConvertible {
-    public typealias ManagedObject = RepositoryManagedObject
+    typealias ManagedObject = RepositoryManagedObject
 }

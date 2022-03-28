@@ -11,16 +11,10 @@ import LSData
 
 class SearchRepositoriesParamMapper: Mapper {
 
-    typealias Input = [SearchRepositoriesEndpoint.Attributes]?
+    typealias Input = String
     typealias Output = [LSApiEndpointAttribute]
     
-    func map(_ input: [SearchRepositoriesEndpoint.Attributes]?) -> [LSApiEndpointAttribute] {
-        guard let input = input else { return [] }
-        return input.map { item in
-            switch item {
-            case .query(let query):
-                return .addUrlParameter(key: "q", value: query)
-            }
-        }
+    func map(_ input: String) -> [LSApiEndpointAttribute] {
+        return [LSApiEndpointAttribute.addUrlParameter(key: "q", value: input)]
     }
 }

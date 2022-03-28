@@ -10,11 +10,12 @@ import UIKit
 enum SupportedVCs {
     case searchVC
     case refreshVC
+    case exampleVC
 }
 
 class ViewController: UIViewController {
     
-    var items: [(title: String, vc: SupportedVCs)] = [("Search", .searchVC), ("Refresh", .refreshVC)]
+    var items: [(title: String, vc: SupportedVCs)] = [("Core Data", .searchVC), ("Refresh", .refreshVC)]
     lazy var tableView = UITableView()
     
     override func loadView() {
@@ -56,7 +57,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         case .refreshVC:
             viewController = RefreshViewController()
         case .searchVC:
-            viewController = SearchViewController()
+            viewController = CoreDataViewController()
+        case .exampleVC:
+            viewController = CoreDataViewController()
         }
         self.navigationController?.pushViewController(viewController, animated: true)
 

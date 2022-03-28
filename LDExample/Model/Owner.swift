@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import LSData
+import Combine
 
-public struct Owner {
+struct Owner {
     let id: String
     let name: String
 }
